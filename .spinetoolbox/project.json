@@ -1,0 +1,2176 @@
+{
+    "project": {
+        "version": 1,
+        "name": "Spine_Case_Study_A4",
+        "description": "Spine Toolbox project for the workflow of case study A4, aiming to demonstrate some key functionality required for replicating RealValue project results.",
+        "tool_specifications": [
+            {
+                "type": "path",
+                "relative": true,
+                "path": ".spinetoolbox/items/bm2uc.json"
+            },
+            {
+                "type": "path",
+                "relative": true,
+                "path": ".spinetoolbox/items/spinemodela4.json"
+            }
+        ],
+        "connections": [
+            {
+                "from": [
+                    "Building_Model",
+                    "right"
+                ],
+                "to": [
+                    "BM2UC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "BM2UC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Combined_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "BM2UC",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Connection",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Connection",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Combined_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "BM2UC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "Power_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "Building_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
+            }
+        ]
+    },
+    "objects": {
+        "Data Stores": {
+            "Building_Data_Store": {
+                "short name": "building_data_store",
+                "description": "Contains Spine Model compatible building model input, as well as the output from the building model.",
+                "x": 334.81732072852674,
+                "y": 277.4152092274322,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/building_data_store/Building_Data_Store.sqlite"
+                    }
+                }
+            },
+            "Power_Data_Store": {
+                "short name": "power_data_store",
+                "description": "Database for power system Spine Model input data.",
+                "x": 378.93652470303005,
+                "y": 76.84979102144922,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/power_data_store/Power_Data_Store.sqlite"
+                    }
+                }
+            },
+            "Combined_Data_Store": {
+                "short name": "combined_data_store",
+                "description": "Data store for the combined input data from the building and power system models.",
+                "x": 334.31325140244326,
+                "y": 177.45384514268048,
+                "url": {
+                    "dialect": "sqlite",
+                    "username": "",
+                    "password": "",
+                    "host": "",
+                    "port": "",
+                    "database": {
+                        "type": "path",
+                        "relative": true,
+                        "path": ".spinetoolbox/items/combined_data_store/Combined_Data_Store.sqlite"
+                    }
+                }
+            }
+        },
+        "Data Connections": {
+            "Building_Data_Connection": {
+                "short name": "building_data_connection",
+                "description": "Contains raw building model data.",
+                "x": -258.8757331889367,
+                "y": 180.29541781989622,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/building_data_config.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Object_Parameters.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Object_Parameters_string.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Object_Timeseries.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Relationship_2D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Relationship_3D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/building_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                    }
+                ]
+            },
+            "Power_Data_Connection": {
+                "short name": "power_data_connection",
+                "description": "Raw data for the power system model.",
+                "x": -90.21841659063531,
+                "y": 76.99987934721499,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/power_data_config.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Spine_Object_Timeseries_sorted.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Object_Parameters.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Object_Parameters_Duration.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Object_Parameters_String.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Relationship_2D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Relationship_3D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "data/power_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                    }
+                ]
+            }
+        },
+        "Tools": {
+            "Building_Model": {
+                "short name": "building_model",
+                "description": "Runs the building model database.",
+                "x": 474.7584825039885,
+                "y": 357.59373976123067,
+                "tool": "SpineModelA4",
+                "execute_in_work": false,
+                "cmd_line_args": []
+            },
+            "Power_Model": {
+                "short name": "power_model",
+                "description": "Runs Spine Model with the power system database",
+                "x": 585.9331835465166,
+                "y": 76.67696614001677,
+                "tool": "SpineModelA4",
+                "execute_in_work": false,
+                "cmd_line_args": []
+            },
+            "BM2UC": {
+                "short name": "bm2uc",
+                "description": "Modifies power system input using building model results",
+                "x": 593.8092154404833,
+                "y": 278.47796899886805,
+                "tool": "BM2UC",
+                "execute_in_work": false,
+                "cmd_line_args": []
+            },
+            "Combined_Model": {
+                "short name": "combined_model",
+                "description": "Runs Spine Model with the combined building and power system database.",
+                "x": 714.568021755185,
+                "y": 178.9035990441253,
+                "tool": "SpineModelA4",
+                "execute_in_work": false,
+                "cmd_line_args": []
+            }
+        },
+        "Views": {},
+        "Importers": {
+            "Building_Data_Importer": {
+                "short name": "building_data_importer",
+                "description": "Imports raw building data into the database.",
+                "x": -23.301247585183944,
+                "y": 179.32904466867456,
+                "mappings": [
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column",
+                                                "reference": 4
+                                            },
+                                            {
+                                                "value_reference": 5,
+                                                "map_type": "column",
+                                                "reference": 5
+                                            },
+                                            {
+                                                "value_reference": 6,
+                                                "map_type": "column",
+                                                "reference": 6
+                                            }
+                                        ],
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 7,
+                                                "map_type": "column",
+                                                "reference": 7
+                                            },
+                                            "value": {
+                                                "value_reference": 8,
+                                                "map_type": "column",
+                                                "reference": 8
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string",
+                                    "7": "string",
+                                    "8": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Object_Parameters.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column"
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Object_Timeseries.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column",
+                                            "reference": 1
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            "extra_dimensions": [
+                                                {
+                                                    "value_reference": 4,
+                                                    "map_type": "column",
+                                                    "reference": 4
+                                                }
+                                            ],
+                                            "options": {
+                                                "repeat": false
+                                            },
+                                            "parameter_type": "time series"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "float",
+                                    "4": "datetime"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/building_data_config.xlsx"
+                        },
+                        {
+                            "table_mappings": {
+                                "report__output": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "dummy_parameters_3D": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 7
+                                            },
+                                            "parameter_type": "definition"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "None"
+                                            },
+                                            {
+                                                "map_type": "None"
+                                            },
+                                            {
+                                                "map_type": "None"
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "dummy_relationships_2D": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "dummy_relationships_3D": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 5
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 6
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "model": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "row",
+                                                "reference": 0
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "None"
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
+                                ],
+                                "temporal_blocks": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "row",
+                                                "reference": 0
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "None"
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
+                                ],
+                                "dummy_parameters": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            "parameter_type": "definition"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "None"
+                                        }
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "model": {
+                                    "header": false,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "report__output": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_parameters_3D": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_relationships_2D": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_relationships_3D": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "temporal_blocks": {
+                                    "header": false,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_parameters": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                }
+                            },
+                            "table_types": {
+                                "model": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "datetime",
+                                    "3": "datetime",
+                                    "4": "duration",
+                                    "5": "string"
+                                },
+                                "temporal_blocks": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "duration",
+                                    "3": "duration",
+                                    "4": "duration"
+                                },
+                                "report__output": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                },
+                                "dummy_parameters_3D": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string",
+                                    "7": "string",
+                                    "8": "float"
+                                },
+                                "dummy_relationships_2D": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                },
+                                "dummy_relationships_3D": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string"
+                                },
+                                "dummy_parameters": {
+                                    "0": "string",
+                                    "1": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "model",
+                                "temporal_blocks",
+                                "dummy_parameters",
+                                "report__output",
+                                "dummy_parameters_3D"
+                            ],
+                            "source_type": "ExcelConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Relationship_2D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Object_Parameters_string.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column"
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Relationship_3D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 5,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 6,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 5,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 6,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ]
+                ],
+                "cancel_on_error": true
+            },
+            "Power_Data_Importer": {
+                "short name": "power_data_importer",
+                "description": "Imports raw power system data into a Spine Model compatible database.",
+                "x": 154.8013293237982,
+                "y": 75.0348797604998,
+                "mappings": [
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Object_Parameters_Duration.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column"
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "duration"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Object_Timeseries_sorted.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column"
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            "extra_dimensions": [
+                                                {
+                                                    "value_reference": 4,
+                                                    "map_type": "column"
+                                                }
+                                            ],
+                                            "options": {
+                                                "repeat": false
+                                            },
+                                            "parameter_type": "time series"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "float",
+                                    "4": "datetime"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Object_Parameters_String.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column"
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Relationship_2D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column",
+                                                "reference": 4
+                                            },
+                                            {
+                                                "value_reference": 5,
+                                                "map_type": "column",
+                                                "reference": 5
+                                            },
+                                            {
+                                                "value_reference": 6,
+                                                "map_type": "column",
+                                                "reference": 6
+                                            }
+                                        ],
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 7,
+                                                "map_type": "column",
+                                                "reference": 7
+                                            },
+                                            "value": {
+                                                "value_reference": 8,
+                                                "map_type": "column",
+                                                "reference": 8
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string",
+                                    "7": "string",
+                                    "8": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 5,
+                                                "map_type": "column"
+                                            },
+                                            "value": {
+                                                "value_reference": 6,
+                                                "map_type": "column"
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/power_data_config.xlsx"
+                        },
+                        {
+                            "table_mappings": {
+                                "model": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "row",
+                                                "reference": 0
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "None"
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
+                                ],
+                                "temporal_blocks": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "row",
+                                                "reference": 0
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "None"
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
+                                ],
+                                "report__output": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 4
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "dummy_parameters_3D": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 7
+                                            },
+                                            "parameter_type": "definition"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": [
+                                            {
+                                                "map_type": "None"
+                                            },
+                                            {
+                                                "map_type": "None"
+                                            },
+                                            {
+                                                "map_type": "None"
+                                            }
+                                        ],
+                                        "object_classes": [
+                                            {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        ],
+                                        "import_objects": true
+                                    }
+                                ],
+                                "dummy_relationships_2D": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "None"
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "None"
+                                        }
+                                    }
+                                ],
+                                "dummy_parameters": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            "parameter_type": "single value",
+                                            "value": {
+                                                "map_type": "column",
+                                                "reference": 3
+                                            }
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "column",
+                                            "reference": 1
+                                        }
+                                    }
+                                ],
+                                "dummy_relationships_3D": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "None"
+                                        },
+                                        "parameters": {
+                                            "map_type": "None"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "None"
+                                        }
+                                    }
+                                ],
+                                "dummy_parameter_definitions": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "map_type": "column",
+                                                "reference": 1
+                                            },
+                                            "parameter_type": "definition"
+                                        },
+                                        "skip_columns": [],
+                                        "read_start_row": 0,
+                                        "objects": {
+                                            "map_type": "None"
+                                        }
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "model": {
+                                    "header": false,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "temporal_blocks": {
+                                    "header": false,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "report__output": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_parameters_3D": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_relationships_2D": {
+                                    "header": false,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_parameters": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                },
+                                "dummy_parameter_definitions": {
+                                    "header": true,
+                                    "row": 0,
+                                    "column": 0,
+                                    "read_until_col": false,
+                                    "read_until_row": false
+                                }
+                            },
+                            "table_types": {
+                                "model": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "datetime",
+                                    "3": "datetime",
+                                    "4": "duration",
+                                    "5": "string"
+                                },
+                                "temporal_blocks": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "duration",
+                                    "3": "duration",
+                                    "4": "duration"
+                                },
+                                "report__output": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                },
+                                "dummy_parameters_3D": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string",
+                                    "7": "string",
+                                    "8": "string"
+                                },
+                                "dummy_relationships_2D": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string"
+                                },
+                                "dummy_parameters": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "float"
+                                },
+                                "dummy_parameter_definitions": {
+                                    "0": "string",
+                                    "1": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "report__output",
+                                "temporal_blocks",
+                                "dummy_parameters_3D",
+                                "model",
+                                "dummy_parameter_definitions"
+                            ],
+                            "source_type": "ExcelConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Object_Parameters.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "ObjectClass",
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column",
+                                            "reference": 0
+                                        },
+                                        "object": {
+                                            "value_reference": 1,
+                                            "map_type": "column",
+                                            "reference": 1
+                                        },
+                                        "parameters": {
+                                            "map_type": "parameter",
+                                            "name": {
+                                                "value_reference": 2,
+                                                "map_type": "column",
+                                                "reference": 2
+                                            },
+                                            "value": {
+                                                "value_reference": 3,
+                                                "map_type": "column",
+                                                "reference": 3
+                                            },
+                                            "options": null,
+                                            "parameter_type": "single value"
+                                        },
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "float"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Temporary_Spine_Relationship_3D.txt"
+                        },
+                        {
+                            "table_mappings": {
+                                "csv": [
+                                    {
+                                        "map_type": "RelationshipClass",
+                                        "import_objects": true,
+                                        "name": {
+                                            "value_reference": 0,
+                                            "map_type": "column"
+                                        },
+                                        "object_classes": [
+                                            {
+                                                "value_reference": 1,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 2,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 3,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "objects": [
+                                            {
+                                                "value_reference": 4,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 5,
+                                                "map_type": "column"
+                                            },
+                                            {
+                                                "value_reference": 6,
+                                                "map_type": "column"
+                                            }
+                                        ],
+                                        "read_start_row": 0
+                                    }
+                                ]
+                            },
+                            "table_options": {
+                                "csv": {
+                                    "encoding": "ascii",
+                                    "delimiter": ";",
+                                    "delimiter_custom": "",
+                                    "quotechar": "\"",
+                                    "has_header": false,
+                                    "skip": 0
+                                }
+                            },
+                            "table_types": {
+                                "csv": {
+                                    "0": "string",
+                                    "1": "string",
+                                    "2": "string",
+                                    "3": "string",
+                                    "4": "string",
+                                    "5": "string",
+                                    "6": "string"
+                                }
+                            },
+                            "table_row_types": {},
+                            "selected_tables": [
+                                "csv"
+                            ],
+                            "source_type": "CSVConnector"
+                        }
+                    ]
+                ],
+                "cancel_on_error": true
+            }
+        },
+        "Exporters": {}
+    }
+}

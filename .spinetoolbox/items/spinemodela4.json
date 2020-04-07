@@ -1,0 +1,15 @@
+{
+    "name": "SpineModelA4",
+    "description": "Execute script running the case study A4 using Spine Model",
+    "tooltype": "julia",
+    "execute_in_work": false,
+    "includes": [
+        "SpineModelA4.jl"
+    ],
+    "inputfiles": [],
+    "inputfiles_opt": [],
+    "outputfiles": [],
+    "cmdline_args": [
+        "@@url_inputs@@"
+    ]
+}

@@ -1,0 +1,8 @@
+[deps]
+Cbc = "9961bab8-2fa3-5c5a-9d89-47fab24efd76"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+SpineInterface = "0cda1612-498a-11e9-3c92-77fa82595a4f"
+SpineModel = "b74cbf36-17f7-11e9-3430-fdc535b30a00"
+
+[compat]
+julia = "1.2"

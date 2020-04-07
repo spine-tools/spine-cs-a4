@@ -1,0 +1,14 @@
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_WH";"Elec";"to_node";"unit_capacity";2999.999999999
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_SH";"Elec";"to_node";"unit_capacity";13389.954682463
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_WH";"Elec";"to_node";"unit_capacity";2999.999999999
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_SH";"Elec";"to_node";"unit_capacity";14323.396354236
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_WH";"Elec";"from_node";"unit_capacity";151.984682585
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_SH";"Elec";"from_node";"unit_capacity";678.356004082
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_AC";"Elec";"from_node";"unit_capacity";72.357973768
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_WH";"Elec";"from_node";"unit_capacity";1087.140091107
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_SH";"Elec";"from_node";"unit_capacity";5190.512805838
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_AC";"Elec";"from_node";"unit_capacity";553.654699289
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_All_SH_El_SH_HD";"Elec";"from_node";"unit_capacity";13389.954682463
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_All_SH_El_SH_HD";"Elec";"from_node";"unit_capacity";14323.396354236
+"unit__commodity__direction";"unit";"commodity";"direction";"74FI_Dummy";"Elec";"to_node";"vom_cost";1000.000000000
+"unit__commodity__direction";"unit";"commodity";"direction";"75FI_Dummy";"Elec";"to_node";"vom_cost";1000.000000000
