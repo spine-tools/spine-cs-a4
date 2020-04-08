@@ -1,11 +1,14 @@
 Spine Case Study A4 Week Long Demo
 ==================================
 
-Requires Python 3.7, virtualenv and Julia 1.2.
+Spine Toolbox project for the workflow of case study A4, aiming to demonstrate 
+some key functionality required for replicating RealValue project results.
 
 # Instructions
 
 ## Python environment
+
+Python 3.7 and `virtualenv` package is required.
 
 First create a Python virtual environment and activate it.
 
@@ -20,13 +23,15 @@ Install Python dependencies.
     
     
 ## Julia environment
+
+Julia 1.2 is required.
     
 Instantiate Julia environment with
 
     (venv) > julia init_julia.jl
 
 
-## Launch Spine Toolbox
+## Spine Toolbox
 
 You should now be able to launch Spine Toolbox using
 
