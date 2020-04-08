@@ -155,6 +155,26 @@
                     "Power_Data_Importer",
                     "left"
                 ]
+            },
+            {
+                "from": [
+                    "Configuration",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Configuration",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
             }
         ]
     },
@@ -220,13 +240,8 @@
                 "short name": "building_data_connection",
                 "description": "Contains raw building model data.",
                 "x": -258.8757331889367,
-                "y": 180.29541781989622,
+                "y": 267.84320745201126,
                 "references": [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "data/building_data/building_data_config.xlsx"
-                    },
                     {
                         "type": "path",
                         "relative": true,
@@ -267,14 +282,9 @@
             "Power_Data_Connection": {
                 "short name": "power_data_connection",
                 "description": "Raw data for the power system model.",
-                "x": -90.21841659063531,
-                "y": 76.99987934721499,
+                "x": -128.2826729524245,
+                "y": 59.870963984409855,
                 "references": [
-                    {
-                        "type": "path",
-                        "relative": true,
-                        "path": "data/power_data/power_data_config.xlsx"
-                    },
                     {
                         "type": "path",
                         "relative": true,
@@ -314,6 +324,24 @@
                         "type": "path",
                         "relative": true,
                         "path": "data/power_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                    }
+                ]
+            },
+            "Configuration": {
+                "short name": "configuration",
+                "description": "",
+                "x": -260.32420708289794,
+                "y": 156.2164960586747,
+                "references": [
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "config/building_data_config.xlsx"
+                    },
+                    {
+                        "type": "path",
+                        "relative": true,
+                        "path": "config/power_data_config.xlsx"
                     }
                 ]
             }
@@ -361,8 +389,8 @@
             "Building_Data_Importer": {
                 "short name": "building_data_importer",
                 "description": "Imports raw building data into the database.",
-                "x": -23.301247585183944,
-                "y": 179.32904466867456,
+                "x": -6.17233222237882,
+                "y": 181.232257486764,
                 "mappings": [
                     [
                         {
@@ -604,7 +632,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/building_data_config.xlsx"
+                            "path": "config/building_data_config.xlsx"
                         },
                         {
                             "table_mappings": {
@@ -1694,7 +1722,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/power_data_config.xlsx"
+                            "path": "config/power_data_config.xlsx"
                         },
                         {
                             "table_mappings": {
