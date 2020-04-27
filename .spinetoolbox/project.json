@@ -405,40 +405,33 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
                                             "map_type": "column",
                                             "reference": 0
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
                                                 "map_type": "column",
                                                 "reference": 1
                                             },
                                             {
-                                                "value_reference": 2,
                                                 "map_type": "column",
                                                 "reference": 2
                                             },
                                             {
-                                                "value_reference": 3,
                                                 "map_type": "column",
                                                 "reference": 3
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 4,
                                                 "map_type": "column",
                                                 "reference": 4
                                             },
                                             {
-                                                "value_reference": 5,
                                                 "map_type": "column",
                                                 "reference": 5
                                             },
                                             {
-                                                "value_reference": 6,
                                                 "map_type": "column",
                                                 "reference": 6
                                             }
@@ -446,12 +439,10 @@
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 7,
                                                 "map_type": "column",
                                                 "reference": 7
                                             },
                                             "value": {
-                                                "value_reference": 8,
                                                 "map_type": "column",
                                                 "reference": 8
                                             },
@@ -504,21 +495,21 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object": {
-                                            "value_reference": 1,
+                                            "reference": 1,
                                             "map_type": "column"
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -565,30 +556,25 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
                                             "map_type": "column",
                                             "reference": 0
                                         },
                                         "object": {
-                                            "value_reference": 1,
                                             "map_type": "column",
                                             "reference": 1
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
                                                 "map_type": "column",
                                                 "reference": 2
                                             },
                                             "value": {
-                                                "value_reference": 3,
                                                 "map_type": "column",
                                                 "reference": 3
                                             },
                                             "extra_dimensions": [
                                                 {
-                                                    "value_reference": 4,
                                                     "map_type": "column",
                                                     "reference": 4
                                                 }
@@ -999,26 +985,26 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             }
                                         ],
@@ -1064,21 +1050,21 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object": {
-                                            "value_reference": 1,
+                                            "reference": 1,
                                             "map_type": "column"
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -1126,34 +1112,34 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 5,
+                                                "reference": 5,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 6,
+                                                "reference": 6,
                                                 "map_type": "column"
                                             }
                                         ],
@@ -1202,37 +1188,37 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 5,
+                                                "reference": 5,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 6,
+                                                "reference": 6,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -1291,21 +1277,21 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object": {
-                                            "value_reference": 1,
+                                            "reference": 1,
                                             "map_type": "column"
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -1352,26 +1338,26 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object": {
-                                            "value_reference": 1,
+                                            "reference": 1,
                                             "map_type": "column"
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             "extra_dimensions": [
                                                 {
-                                                    "value_reference": 4,
+                                                    "reference": 4,
                                                     "map_type": "column"
                                                 }
                                             ],
@@ -1422,21 +1408,21 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object": {
-                                            "value_reference": 1,
+                                            "reference": 1,
                                             "map_type": "column"
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -1484,26 +1470,26 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             }
                                         ],
@@ -1550,40 +1536,33 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
                                             "map_type": "column",
                                             "reference": 0
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
                                                 "map_type": "column",
                                                 "reference": 1
                                             },
                                             {
-                                                "value_reference": 2,
                                                 "map_type": "column",
                                                 "reference": 2
                                             },
                                             {
-                                                "value_reference": 3,
                                                 "map_type": "column",
                                                 "reference": 3
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 4,
                                                 "map_type": "column",
                                                 "reference": 4
                                             },
                                             {
-                                                "value_reference": 5,
                                                 "map_type": "column",
                                                 "reference": 5
                                             },
                                             {
-                                                "value_reference": 6,
                                                 "map_type": "column",
                                                 "reference": 6
                                             }
@@ -1591,12 +1570,10 @@
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 7,
                                                 "map_type": "column",
                                                 "reference": 7
                                             },
                                             "value": {
-                                                "value_reference": 8,
                                                 "map_type": "column",
                                                 "reference": 8
                                             },
@@ -1650,37 +1627,37 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 5,
+                                                "reference": 5,
                                                 "map_type": "column"
                                             },
                                             "value": {
-                                                "value_reference": 6,
+                                                "reference": 6,
                                                 "map_type": "column"
                                             },
                                             "options": null,
@@ -2066,24 +2043,20 @@
                                     {
                                         "map_type": "ObjectClass",
                                         "name": {
-                                            "value_reference": 0,
                                             "map_type": "column",
                                             "reference": 0
                                         },
                                         "object": {
-                                            "value_reference": 1,
                                             "map_type": "column",
                                             "reference": 1
                                         },
                                         "parameters": {
                                             "map_type": "parameter",
                                             "name": {
-                                                "value_reference": 2,
                                                 "map_type": "column",
                                                 "reference": 2
                                             },
                                             "value": {
-                                                "value_reference": 3,
                                                 "map_type": "column",
                                                 "reference": 3
                                             },
@@ -2132,34 +2105,34 @@
                                         "map_type": "RelationshipClass",
                                         "import_objects": true,
                                         "name": {
-                                            "value_reference": 0,
+                                            "reference": 0,
                                             "map_type": "column"
                                         },
                                         "object_classes": [
                                             {
-                                                "value_reference": 1,
+                                                "reference": 1,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 2,
+                                                "reference": 2,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 3,
+                                                "reference": 3,
                                                 "map_type": "column"
                                             }
                                         ],
                                         "objects": [
                                             {
-                                                "value_reference": 4,
+                                                "reference": 4,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 5,
+                                                "reference": 5,
                                                 "map_type": "column"
                                             },
                                             {
-                                                "value_reference": 6,
+                                                "reference": 6,
                                                 "map_type": "column"
                                             }
                                         ],
