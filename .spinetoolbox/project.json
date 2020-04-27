@@ -245,37 +245,37 @@
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Object_Parameters.txt"
+                        "path": "data/building_data/Spine_Object_Parameters.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Object_Parameters_string.txt"
+                        "path": "data/building_data/Spine_Object_Parameters_string.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Object_Timeseries.txt"
+                        "path": "data/building_data/Spine_Object_Timeseries.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Relationship_2D.txt"
+                        "path": "data/building_data/Spine_Relationship_2D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Relationship_3D.txt"
+                        "path": "data/building_data/Spine_Relationship_3D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                        "path": "data/building_data/Spine_Relationship_Parameters_2D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/building_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                        "path": "data/building_data/Spine_Relationship_Parameters_3D.csv"
                     }
                 ]
             },
@@ -288,42 +288,42 @@
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Spine_Object_Timeseries_sorted.txt"
+                        "path": "data/power_data/Spine_Object_Timeseries_sorted.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Object_Parameters.txt"
+                        "path": "data/power_data/Spine_Object_Parameters.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Object_Parameters_Duration.txt"
+                        "path": "data/power_data/Spine_Object_Parameters_Duration.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Object_Parameters_String.txt"
+                        "path": "data/power_data/Spine_Object_Parameters_String.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Relationship_2D.txt"
+                        "path": "data/power_data/Spine_Relationship_2D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Relationship_3D.txt"
+                        "path": "data/power_data/Spine_Relationship_3D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                        "path": "data/power_data/Spine_Relationship_Parameters_2D.csv"
                     },
                     {
                         "type": "path",
                         "relative": true,
-                        "path": "data/power_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                        "path": "data/power_data/Spine_Relationship_Parameters_3D.csv"
                     }
                 ]
             },
@@ -396,7 +396,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                            "path": "data/building_data/Spine_Relationship_Parameters_3D.csv"
                         },
                         {
                             "table_mappings": {
@@ -496,7 +496,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Object_Parameters.txt"
+                            "path": "data/building_data/Spine_Object_Parameters.csv"
                         },
                         {
                             "table_mappings": {
@@ -557,7 +557,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Object_Timeseries.txt"
+                            "path": "data/building_data/Spine_Object_Timeseries.csv"
                         },
                         {
                             "table_mappings": {
@@ -990,7 +990,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Relationship_2D.txt"
+                            "path": "data/building_data/Spine_Relationship_2D.csv"
                         },
                         {
                             "table_mappings": {
@@ -1056,7 +1056,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Object_Parameters_string.txt"
+                            "path": "data/building_data/Spine_Object_Parameters_string.csv"
                         },
                         {
                             "table_mappings": {
@@ -1117,7 +1117,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Relationship_3D.txt"
+                            "path": "data/building_data/Spine_Relationship_3D.csv"
                         },
                         {
                             "table_mappings": {
@@ -1193,7 +1193,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/building_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                            "path": "data/building_data/Spine_Relationship_Parameters_2D.csv"
                         },
                         {
                             "table_mappings": {
@@ -1283,7 +1283,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Object_Parameters_Duration.txt"
+                            "path": "data/power_data/Spine_Object_Parameters_Duration.csv"
                         },
                         {
                             "table_mappings": {
@@ -1344,7 +1344,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Spine_Object_Timeseries_sorted.txt"
+                            "path": "data/power_data/Spine_Object_Timeseries_sorted.csv"
                         },
                         {
                             "table_mappings": {
@@ -1414,7 +1414,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Object_Parameters_String.txt"
+                            "path": "data/power_data/Spine_Object_Parameters_String.csv"
                         },
                         {
                             "table_mappings": {
@@ -1475,7 +1475,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Relationship_2D.txt"
+                            "path": "data/power_data/Spine_Relationship_2D.csv"
                         },
                         {
                             "table_mappings": {
@@ -1541,7 +1541,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Relationship_Parameters_3D.txt"
+                            "path": "data/power_data/Spine_Relationship_Parameters_3D.csv"
                         },
                         {
                             "table_mappings": {
@@ -1641,7 +1641,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Relationship_Parameters_2D.txt"
+                            "path": "data/power_data/Spine_Relationship_Parameters_2D.csv"
                         },
                         {
                             "table_mappings": {
@@ -2058,7 +2058,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Object_Parameters.txt"
+                            "path": "data/power_data/Spine_Object_Parameters.csv"
                         },
                         {
                             "table_mappings": {
@@ -2123,7 +2123,7 @@
                         {
                             "type": "path",
                             "relative": true,
-                            "path": "data/power_data/Temporary_Spine_Relationship_3D.txt"
+                            "path": "data/power_data/Spine_Relationship_3D.csv"
                         },
                         {
                             "table_mappings": {
