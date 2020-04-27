@@ -7,12 +7,12 @@
             {
                 "type": "path",
                 "relative": true,
-                "path": ".spinetoolbox/items/bm2uc.json"
+                "path": "scripts/bm2uc.json"
             },
             {
                 "type": "path",
                 "relative": true,
-                "path": ".spinetoolbox/items/spinemodela4.json"
+                "path": "scripts/spinemodela4.json"
             }
         ],
         "connections": [
