@@ -38,4 +38,4 @@ You should now be able to launch Spine Toolbox using
     (.venv) > spinetoolbox
     
 In the Toolbox settings, you need to set the active Julia project to the 
-current project directory.
+`.julia` directory.

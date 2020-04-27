@@ -1,12 +1,12 @@
 using Pkg
 
-# Activate environment at current directory
-Pkg.activate(".")
+# Activate the project’s Julia environment
+Pkg.activate(".julia")
 
 # Download all required packages listed in Manifest.toml
 Pkg.instantiate()
 
-# Set Python executable to current and re-build PyCall
+# Set Python executable and re-build PyCall
 ENV["PYTHON"] = Sys.which("python")
 Pkg.build("PyCall")
 using PyCall
