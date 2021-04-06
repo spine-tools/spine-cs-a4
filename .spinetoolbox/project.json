@@ -18,111 +18,41 @@
         "connections": [
             {
                 "from": [
+                    "Configuration",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Configuration",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Store",
+                    "right"
+                ],
+                "to": [
                     "Building_Model",
-                    "right"
-                ],
-                "to": [
-                    "BM2UC",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Building_Data_Store",
-                    "right"
-                ],
-                "to": [
-                    "BM2UC",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Combined_Data_Store",
-                    "right"
-                ],
-                "to": [
-                    "Combined_Model",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Power_Data_Importer",
-                    "right"
-                ],
-                "to": [
-                    "Power_Data_Store",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Building_Data_Importer",
-                    "right"
-                ],
-                "to": [
-                    "Combined_Data_Store",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Building_Data_Importer",
-                    "right"
-                ],
-                "to": [
-                    "Building_Data_Store",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Power_Data_Importer",
-                    "right"
-                ],
-                "to": [
-                    "Combined_Data_Store",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "BM2UC",
-                    "right"
-                ],
-                "to": [
-                    "Combined_Model",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Power_Data_Connection",
-                    "right"
-                ],
-                "to": [
-                    "Power_Data_Importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Building_Data_Connection",
-                    "right"
-                ],
-                "to": [
-                    "Building_Data_Importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Combined_Data_Store",
-                    "right"
-                ],
-                "to": [
-                    "BM2UC",
                     "left"
                 ]
             },
@@ -138,41 +68,111 @@
             },
             {
                 "from": [
+                    "Combined_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "BM2UC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Connection",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Connection",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Importer",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "BM2UC",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Building_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Building_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Power_Data_Importer",
+                    "right"
+                ],
+                "to": [
+                    "Power_Data_Store",
+                    "left"
+                ]
+            },
+            {
+                "from": [
+                    "Combined_Data_Store",
+                    "right"
+                ],
+                "to": [
+                    "Combined_Model",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Building_Data_Store",
                     "right"
                 ],
                 "to": [
+                    "BM2UC",
+                    "left"
+                ]
+            },
+            {
+                "from": [
                     "Building_Model",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Building_Data_Importer",
                     "right"
                 ],
                 "to": [
-                    "Power_Data_Importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Configuration",
-                    "right"
-                ],
-                "to": [
-                    "Building_Data_Importer",
-                    "left"
-                ]
-            },
-            {
-                "from": [
-                    "Configuration",
-                    "right"
-                ],
-                "to": [
-                    "Power_Data_Importer",
+                    "BM2UC",
                     "left"
                 ]
             }
@@ -181,10 +181,11 @@
     "objects": {
         "Data Stores": {
             "Building_Data_Store": {
+                "type": "Data Store",
                 "short name": "building_data_store",
                 "description": "Contains Spine Model compatible building model input, as well as the output from the building model.",
-                "x": 334.81732072852674,
-                "y": 277.4152092274322,
+                "x": 121.97117644540276,
+                "y": 82.36833934681684,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -199,10 +200,11 @@
                 }
             },
             "Power_Data_Store": {
+                "type": "Data Store",
                 "short name": "power_data_store",
                 "description": "Database for power system Spine Model input data.",
-                "x": 378.93652470303005,
-                "y": 76.84979102144922,
+                "x": 166.09038041990607,
+                "y": -118.19707885916611,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -217,10 +219,11 @@
                 }
             },
             "Combined_Data_Store": {
+                "type": "Data Store",
                 "short name": "combined_data_store",
                 "description": "Data store for the combined input data from the building and power system models.",
-                "x": 334.31325140244326,
-                "y": 177.45384514268048,
+                "x": 121.46710711931928,
+                "y": -17.593024737934854,
                 "url": {
                     "dialect": "sqlite",
                     "username": "",
@@ -237,10 +240,11 @@
         },
         "Data Connections": {
             "Building_Data_Connection": {
+                "type": "Data Connection",
                 "short name": "building_data_connection",
                 "description": "Contains raw building model data.",
-                "x": -258.8757331889367,
-                "y": 267.84320745201126,
+                "x": -471.72187747206067,
+                "y": 72.79633757139592,
                 "references": [
                     {
                         "type": "path",
@@ -280,10 +284,11 @@
                 ]
             },
             "Power_Data_Connection": {
+                "type": "Data Connection",
                 "short name": "power_data_connection",
                 "description": "Raw data for the power system model.",
-                "x": -128.2826729524245,
-                "y": 59.870963984409855,
+                "x": -341.12881723554847,
+                "y": -135.17590589620548,
                 "references": [
                     {
                         "type": "path",
@@ -328,10 +333,11 @@
                 ]
             },
             "Configuration": {
+                "type": "Data Connection",
                 "short name": "configuration",
                 "description": "",
-                "x": -260.32420708289794,
-                "y": 156.2164960586747,
+                "x": -473.1703513660219,
+                "y": -38.83037382194064,
                 "references": [
                     {
                         "type": "path",
@@ -348,37 +354,41 @@
         },
         "Tools": {
             "Building_Model": {
+                "type": "Tool",
                 "short name": "building_model",
                 "description": "Runs the building model database.",
-                "x": 474.7584825039885,
-                "y": 357.59373976123067,
+                "x": 261.9123382208645,
+                "y": 162.54686988061533,
                 "tool": "SpineModelA4",
                 "execute_in_work": false,
                 "cmd_line_args": []
             },
             "Power_Model": {
+                "type": "Tool",
                 "short name": "power_model",
                 "description": "Runs Spine Model with the power system database",
-                "x": 585.9331835465166,
-                "y": 76.67696614001677,
+                "x": 373.0870392633926,
+                "y": -118.36990374059855,
                 "tool": "SpineModelA4",
                 "execute_in_work": false,
                 "cmd_line_args": []
             },
             "BM2UC": {
+                "type": "Tool",
                 "short name": "bm2uc",
                 "description": "Modifies power system input using building model results",
-                "x": 593.8092154404833,
-                "y": 278.47796899886805,
+                "x": 380.9630711573593,
+                "y": 83.43109911825272,
                 "tool": "BM2UC",
                 "execute_in_work": false,
                 "cmd_line_args": []
             },
             "Combined_Model": {
+                "type": "Tool",
                 "short name": "combined_model",
                 "description": "Runs Spine Model with the combined building and power system database.",
-                "x": 714.568021755185,
-                "y": 178.9035990441253,
+                "x": 501.721877472061,
+                "y": -16.143270836490046,
                 "tool": "SpineModelA4",
                 "execute_in_work": false,
                 "cmd_line_args": []
@@ -387,10 +397,11 @@
         "Views": {},
         "Importers": {
             "Building_Data_Importer": {
+                "type": "Importer",
                 "short name": "building_data_importer",
                 "description": "Imports raw building data into the database.",
-                "x": -6.17233222237882,
-                "y": 181.232257486764,
+                "x": -219.0184765055028,
+                "y": -13.81461239385132,
                 "mappings": [
                     [
                         {
@@ -1257,13 +1268,88 @@
                         }
                     ]
                 ],
-                "cancel_on_error": true
+                "cancel_on_error": true,
+                "mapping_selection": [
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Object_Parameters.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Object_Parameters_string.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Object_Timeseries.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Relationship_2D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Relationship_3D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Relationship_Parameters_2D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/building_data/Spine_Relationship_Parameters_3D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "config/building_data_config.xlsx"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "config/power_data_config.xlsx"
+                        },
+                        true
+                    ]
+                ]
             },
             "Power_Data_Importer": {
+                "type": "Importer",
                 "short name": "power_data_importer",
                 "description": "Imports raw power system data into a Spine Model compatible database.",
-                "x": 154.8013293237982,
-                "y": 75.0348797604998,
+                "x": -58.04481495932578,
+                "y": -120.01199012011551,
                 "mappings": [
                     [
                         {
@@ -2169,9 +2255,92 @@
                         }
                     ]
                 ],
-                "cancel_on_error": true
+                "cancel_on_error": true,
+                "mapping_selection": [
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Object_Timeseries_sorted.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Object_Parameters.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Object_Parameters_Duration.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Object_Parameters_String.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Relationship_2D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Relationship_3D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Relationship_Parameters_2D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "data/power_data/Spine_Relationship_Parameters_3D.csv"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "config/building_data_config.xlsx"
+                        },
+                        true
+                    ],
+                    [
+                        {
+                            "type": "path",
+                            "relative": true,
+                            "path": "config/power_data_config.xlsx"
+                        },
+                        true
+                    ]
+                ]
             }
         },
-        "Exporters": {}
+        "Exporters": {},
+        "Manipulators": {}
     }
 }

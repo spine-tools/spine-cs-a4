@@ -1,16 +1,17 @@
 {
     "name": "BM2UC",
-    "description": "Takes building model baseline electricity consumption results and reduces them from the electricity consumption of the power system input data.",
     "tooltype": "julia",
-    "execute_in_work": false,
     "includes": [
         "BM2UC.jl"
     ],
+    "description": "Takes building model baseline electricity consumption results and reduces them from the electricity consumption of the power system input data.",
     "inputfiles": [],
     "inputfiles_opt": [],
     "outputfiles": [],
     "cmdline_args": [
         "@@url:Building_Data_Store@@",
         "@@url:Combined_Data_Store@@"
-    ]
+    ],
+    "execute_in_work": false,
+    "includes_main_path": "."
 }
