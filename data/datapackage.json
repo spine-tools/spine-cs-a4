@@ -1,0 +1,795 @@
+{
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "building_data/Spine_Object_Parameters.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Parameters",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "object_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Object_Parameters_string.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Parameters_string",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "unit",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Object_Timeseries.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Timeseries",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "node",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "datetime",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Relationship_2D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_2D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Relationship_3D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_3D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_name",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Relationship_Parameters_2D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_Parameters_2D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "building_data/Spine_Relationship_Parameters_3D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_Parameters_3D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Object_Parameters.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Parameters",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "object_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Object_Parameters_Duration.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Parameters_Duration",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "object_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Object_Parameters_String.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Parameters_String",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "object_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Object_Timeseries_sorted.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Object_Timeseries_sorted",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "object_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "datetime",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Relationship_2D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_2D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Relationship_3D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_3D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_name",
+                        "type": "string",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Relationship_Parameters_2D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_Parameters_2D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "1.000000000",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        },
+        {
+            "path": "power_data/Spine_Relationship_Parameters_3D.csv",
+            "profile": "tabular-data-resource",
+            "name": "Spine_Relationship_Parameters_3D",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "relationship_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_class",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object1_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object2_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "object3_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parameter_name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            },
+            "dialect": {
+                "delimiter": ";",
+                "header": false,
+                "doubleQuote": true,
+                "lineTerminator": "\r\n",
+                "quoteChar": "\"",
+                "skipInitialSpace": true,
+                "caseSensitiveHeader": false
+            }
+        }
+    ]
+}
