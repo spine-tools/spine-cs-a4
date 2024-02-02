@@ -1,6 +1,8 @@
 Spine Case Study A4 Week Long Demo
 ==================================
 
+** This repository is archived and no longer maintained. You may run into issues.**
+
 Spine Toolbox project for the workflow of case study A4, aiming to demonstrate 
 some key functionality required for replicating RealValue project results.
 
